@@ -1,0 +1,29 @@
+<app-adminheader></app-adminheader>
+<div class="fullImg">
+<div *ngIf ="!itemSelected" >
+<table>
+  <tbody>
+  <tr>
+    <th>Dish Id</th>
+    <th>Dish Name</th>
+    <th>Price</th>
+    <th>Update Here</th>
+    <th>Delete Here</th>
+  </tr>
+  <tr *ngFor="let menuitems of menuitems">
+    <td>{{menuitems.dish_id}} </td>
+    <td>{{menuitems.dish_name}} </td>
+    <td>{{menuitems.price}}</td>
+    <td><button style="color: black;" (click)="updateitem(menuitems.dish_id)" type="submit">Update Item</button>
+    </td>
+    <td><button style="color: black;" (click)="deleteitemfunc(menuitems.dish_id)" type="submit">Delete Item</button>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+<app-updateitem *ngIf ="itemSelected" [itemId]="selectedItemID "></app-updateitem>
+</div>
+
+

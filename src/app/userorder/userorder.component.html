@@ -1,0 +1,77 @@
+<app-userheader></app-userheader>
+<body>
+    <div>
+<div>
+<div class="container">
+    <h1><b>ORDER YOUR FAVOURITE COFFEE AND SNACKS</b></h1>
+    <p><b>A café is a type of restaurant which typically serves coffee and tea, in addition to  <br><br>
+      light refreshments such as baked goods or snacks. The term "café" comes from the  <br><br> 
+      French word meaning "coffee".A café setting is known as a casual social environment <br><br>
+      where you can findbr people  reading newspapers and magazines, playing board  games, <br><br>
+      studying or chatting with others about current events. It is also as a place where <br><br>
+      information can be exchanged.</b>
+    </p>    
+       
+    </div>
+    <div class="container2">
+        <h1>About My Cafe</h1>
+        <div style="text-align:center;"  class="cafe" >
+        <img src="../../assets/home.jpeg" width="500px">
+        
+            <h3>Coffeine Corner</h3>At Coffee Corner, we source our beans ethically, ensuring <br>
+            that each cup not only satisfies your taste buds but also supports <br>
+            sustainable and responsible coffee farming. Join us in creating a space <br>
+            where coffee is not just a beverage but a connection between people,<br>
+             stories, and the simple joys of life.
+        </div>
+    </div>
+    <div class="container3">
+        <!-- <h1>ITEMS</h1><br>
+        <div class="combos">
+            <div class="combos1" *ngFor="let item of items" >
+                <h2>Rs.{{item.price}}</h2>
+                <img src="../../assets/image.jpg" width="300px" style="margin:30px 0 30px 0 ">
+                <ul>
+                    <li><input type="text" [(ngModel)] = "item.quantity"></li>
+                   <button class="buy" (click)="addCart(item)">cart</button>
+                    <li>{{item.dish_name | uppercase}}</li>
+                </ul>
+            </div>
+           
+        </div> -->
+        <section class="team">
+            <h1>OUR ITEMS</h1>
+            <div class="team-cards">
+                <!-- Cards here -->
+                <!-- Card 1 -->
+                <div class="card" *ngFor="let item of items" >
+                    <div class="card-img">
+                        <img [src]="item.retrievedImage">
+                    </div>
+                    <div class="card-info">
+                        <h2 class="card-name">Rs.{{item.price}}</h2>
+                        <p class="card-role"><input type="text" [(ngModel)] = "item.quantity"></p>
+                        <p class="card-email">{{item.dish_name | uppercase}}</p>
+                        <p><button class="button" (click)="addCart(item)">Cart</button></p>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    </div>
+    <!-- <div class="contact">
+        <h1>Cafe Order Details</h1>
+        <div class="from">
+        <input type="text" placeholder="Name :" is="name">
+        <input type="number" placeholder="Mobile No :" is="Mobile No">
+        <input type="email" placeholder="Email :" is="Email">
+        <input type="password" placeholder="Password :" is="Password">
+        <textarea placeholder="your Message here"  id="text-area"  rows="5" cols="10"></textarea>
+        <button class="query"><a href="">Submit </a></button>
+    </div> 
+
+
+    </div>-->
+</div></div>
+</body>
+<app-user-footer></app-user-footer>

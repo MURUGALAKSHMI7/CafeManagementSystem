@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    padding:50px;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+}
+.footer1 h1,.footer2 h2,.footer3 h2,.credit p{
+    color: white;
+}
+.footer2 ul,.footer3 ul{
+    margin: top 20px;
+    list-style-type: none;
+}
+.footer2 ul li a,.footer3 ul li a{
+    color: white;
+   transition: 0.2s ease;
+
+}
+.footer2 ul li a:hover,.footer3 ul li a:hover{
+    color: rgb(203,203,203)
+}

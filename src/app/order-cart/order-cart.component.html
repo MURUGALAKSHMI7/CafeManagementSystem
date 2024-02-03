@@ -1,0 +1,35 @@
+<app-userheader></app-userheader>
+<div class="fullImg">
+<div>
+
+<h2>Cafe Cart</h2>
+
+<table style="width: 80%">
+    <thead>
+        <tr>
+            <th>Dish Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+            <th>Remove Cart</th>
+            <th>It will order all items</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let alldishs of this.alldish">
+            <td>{{alldishs.dish_name}}</td>
+            <td>{{alldishs.quantity}}</td>
+            <td>{{alldishs.price}}</td>
+            <td >{{alldishs.total}}</td>
+            <!-- <td >{{alldishs.cartid}}</td> -->
+            <td><button style="color: black;" (click)="deletefunc(alldishs.cartid)" type="submit">Delete Item</button>
+            </td>
+            <td><button class="order-now-button" (click)="navigateToPayment()">Order Now</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+</div></div>
+<app-user-footer></app-user-footer>

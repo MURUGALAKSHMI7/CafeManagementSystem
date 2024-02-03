@@ -1,0 +1,17 @@
+
+<app-adminheader></app-adminheader>
+<br>
+<br/>
+<div class="deletestyle">
+    <div class="login" style="border: 5px solid rgba(90, 90,90,0.5);">
+        <h1><b>Enter Customer Id</b></h1>
+        <div class="input-group">
+            <input type="number" id="user_id" name="user_id" [(ngModel)] = "model.user_id" required>
+            <label for="user_id">Email Id</label>
+        </div>
+
+
+        <button style="color: black;" (click)="deleteuserfunc()" type="submit">submit</button>
+
+    </div>
+</div>

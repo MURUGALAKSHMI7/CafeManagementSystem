@@ -1,0 +1,62 @@
+<!-- 
+<h2>Welcome Admin.....</h2>
+<div class="bg-img">
+  <form  class="container" >
+    <h1>Admin Login</h1>
+    <label for="username"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="username" [(ngModel)]  = "model.username" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" [(ngModel)]  = "model.password" required>
+
+    <button (click)="Uloginsubmit()"  type="submit" class="btn">Login</button>
+  </form>
+</div> -->
+
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-form">
+	<div class="left">
+		<div class="overlay">
+		<h1></h1>
+		
+		<p></p>
+		<!-- <span>
+			<p>login with social media</p>
+			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+		</span> -->
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>Don't have an account? <a href="/Usersignup">Create Your Account</a></p>
+		<div class="inputs">
+			<input type="text" placeholder="user name" name="username" [(ngModel)]  = "model.username" required>
+			<br>
+			<input type="password" placeholder="password" name="password" [(ngModel)]  = "model.password" required>
+		</div>
+			
+			<br><br>
+			
+		<!-- <div class="remember-me--forget-password">
+			
+	<label>
+		<input type="checkbox" name="item" checked/>
+		<span class="text-checkbox">Remember me</span>
+	</label>
+			<p>forget password?</p>
+		</div> -->
+			
+			<br>
+			<button (click)="Uloginsubmit()"  type="submit">Login</button>
+	</div>
+	
+</div>
+<!-- partial -->
+
+
+
+

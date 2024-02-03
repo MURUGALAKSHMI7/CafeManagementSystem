@@ -1,0 +1,15 @@
+<app-userheader></app-userheader>
+<div class="container">
+    <h2>“A cup of coffee shared with a friend is happiness tasted and time well spent.”<small>Menu List</small></h2>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">Dish Name</div>
+        <div class="col col-2">Dish Price</div>
+      </li>
+      <li class="table-row" *ngFor="let menu of menu">
+        <div class="col col-1" data-label="Job Id">{{menu.dish_name}}</div>
+        <div class="col col-2" data-label="Customer Name">{{menu.price}}</div>
+       
+      </li>
+    </ul>
+  </div>

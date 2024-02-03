@@ -1,0 +1,42 @@
+
+<div class="updatestyle">
+    <form  [formGroup]="user">
+         
+        <div class="login" style="border: 5px solid rgba(90, 90,90,0.5);">
+            <h1><b>UPDATE USER</b></h1>
+            <div class="input-group">
+                <input type="number" required formControlName="userid">
+                <label for="">User Id</label>
+            </div>
+            <div class="input-group">
+                <input type="customer name" required formControlName="username">
+                <label for="">User Name</label>
+                </div>
+           
+                <div class="input-group">
+               
+                    <input type="price" required formControlName="phoneno">
+                    <label for="">Phone No</label>
+                    </div>
+                    <div class="input-group">
+               
+                        <input type="price" required formControlName="email">
+                        <label for="">Email</label>
+                        </div>
+                        <div class="input-group">
+               
+                            <input type="price" required formControlName="password">
+                            <label for="">Password</label>
+                            </div>
+                        <div class="input-group">
+               
+                            <input type="price" required formControlName="city">
+                            <label for="">City</label>
+                            </div>
+                
+                <button style="color: black;" type="submit" (click)="updateUser()" >Update User</button>
+            </div>
+            
+
+        </form>
+    </div>

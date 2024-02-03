@@ -1,0 +1,22 @@
+<app-adminheader></app-adminheader>
+<div>
+  <div>
+<h2></h2>
+
+<table>
+  <tbody>
+  <tr>
+    <th>Dish Id</th>
+    <th>User Id</th>
+    <th>Quantity</th>
+    <th>Order Placed</th>
+  </tr>
+  <tr *ngFor="let vieworder of vieworder">
+    <td>{{vieworder.dishid}} </td>
+    <td>{{vieworder.userid}} </td>
+    <td>{{vieworder.quantity}}</td>
+    <td>{{vieworder.isordered}}</td>
+  </tr>
+</tbody>
+</table>
+</div></div>
